@@ -1,0 +1,21 @@
+<h4>Reviews For the Product - <i>Apple Mac Pro</i></h4><br>
+<%= image_tag('mac.jpg', :size => "250x220") %><br><br>
+<h5>Reviews - </h5>
+<div id="rev">
+  <% if !@users.blank? %>
+      <% for item in @users%>
+          <%= item.name %> --
+          <%= item.review %>
+          <br>
+      <%end%>
+  <%else%>
+  <%end%>
+</div>
+
+<hr>
+Enter Reviews - <br><br>
+<%= form_for @user do |f| %>
+    Name: <%= f.text_field :name %>
+    Review: <%= f.text_field :review %>
+    <%= f.submit "Submit Review" %>
+<% end %>
