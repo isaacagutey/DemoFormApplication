@@ -11,13 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20141212174110) do
+=======
+ActiveRecord::Schema.define(version: 20141125004533) do
+>>>>>>> a630cb850b6557276f57e8907bde1d88315adec6
 
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "review"
+<<<<<<< HEAD
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+=======
+    t.datetime "created_at"
+    t.datetime "updated_at"
+>>>>>>> a630cb850b6557276f57e8907bde1d88315adec6
   end
 
 end
