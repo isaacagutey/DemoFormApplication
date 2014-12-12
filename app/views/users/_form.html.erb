@@ -1,0 +1,14 @@
+
+<%= form_for(User.new, remote: true) do |f| %>
+    <div class="field">
+      <br/>
+      <%= f.text_field :name, :placeholder => "Enter Name" %>
+     <br/>
+     <br/>
+      <%= f.text_field :review, :placeholder => "Enter Comment" %>
+    </div>
+    <br/>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
